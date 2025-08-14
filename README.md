@@ -3,7 +3,7 @@
 This project includes the design for a wireless camera with soc which connects to a handheld mointor with an optional phone pairing. Below are three sections:
 <li> A tutorial to connect an existing rtsp enabled camera to a custom monitor with motion/sound detection </li>
 <li> The design of a 2 axis rotating hd camera paired to a portable tablet monitor </li>
-<li> Design documents illustrating the circuit, pcb layout, and bill of materials </li>
+<li> Design documents illustrating the block diagram, circuit, pcb layout, and bill of materials </li>
 
 # Monitor prototype using commmercial rtsp camera
 This setup turns an Orange Pi Zero 3 into a dedicated baby monitor viewer with optional motion and audio detection, using a commercial RTSP-capable IP camera.
@@ -141,4 +141,18 @@ sudo apt install sudo curl wget git htop net-tools ffmpeg mpv python3-opencv pyt
 
 # Design Methods
 
+TODO
+
 # Design Documents
+
+<img width="842" height="902" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/d269813a-696c-4c3f-b68d-40a24cbd9e87" />
+
+Fig 1: System Block Diagram
+
+Fig 2: Circuit Diagram
+
+Fig 3: Camera PCB Diagram
+
+Fig 4: Monitor PCB Diagram
+
+Table 2: BOM
