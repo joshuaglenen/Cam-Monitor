@@ -1,9 +1,9 @@
 # Baby Monitor
 
 This project includes the design for a wireless camera with soc which connects to a handheld mointor with an optional phone pairing. Below are three sections:
-<cl> A tutorial to connect an existing rtsp enabled camera to a custom monitor with motion/sound detection </cl>
-<cl> The design of a 2 axis rotating hd camera paired to a portable tablet monitor </cl>
-<cl> Design documents illustrating the circuit, pcb layout, and bill of materials </cl>
+<li> A tutorial to connect an existing rtsp enabled camera to a custom monitor with motion/sound detection </li>
+<li> The design of a 2 axis rotating hd camera paired to a portable tablet monitor </li>
+<li> Design documents illustrating the circuit, pcb layout, and bill of materials </li>
 
 # Monitor prototype using commmercial rtsp camera
 This setup turns an Orange Pi Zero 3 into a dedicated baby monitor viewer with optional motion and audio detection, using a commercial RTSP-capable IP camera.
@@ -12,10 +12,10 @@ The Orange Pi runs Debian Xfce, displays the camera feed full-screen on an exter
 Power for both the SBC and monitor comes from a USB wall charger.
 
 ### Tested configuration:
-  <cl>Video latency: ~500 ms </cl>
-  <cl>Stream: 1080p @ 30 FPS (RTSP over TCP) </cl>
-  <cl>Stable Wi-Fi after disabling power save </cl>
- <cl> Passive heatsink added to reduce CPU temperature </cl>
+  <li>Video latency: ~500 ms </li>
+  <li>Stream: 1080p @ 30 FPS (RTSP over TCP) </li>
+  <li>Stable Wi-Fi after disabling power save </li>
+  <li>Passive heatsink added to reduce CPU temperature </li>
 
 ### Install base os and packages
 [Debian XCFE](https://sd-card-images.johang.se/boards/orange_pi_zero3.html)
@@ -89,7 +89,7 @@ sudo apt install sudo curl wget git htop net-tools ffmpeg mpv python3-opencv pyt
   sudo systemctl start rtsp-view
 
 
-### Loud noise detection using audio_detect.py
+### Loud noise detection using audio_detector.py
   cat <<'SERVICE' | sudo tee /etc/systemd/system/audio-detector.service
   [Unit]
   Description=RTSP Audio Detector (bark/cry bands)
@@ -101,7 +101,7 @@ sudo apt install sudo curl wget git htop net-tools ffmpeg mpv python3-opencv pyt
   Environment=BARK_DB=-30
   Environment=CRY_DB=-32
   Environment=COOLDOWN=5
-  ExecStart=/usr/bin/python3 /home/orangepi/audio_detect.py
+  ExecStart=/usr/bin/python3 /home/orangepi/audio_detector.py
   Restart=always
   RestartSec=2
   User=orangepi
@@ -122,10 +122,10 @@ sudo apt install sudo curl wget git htop net-tools ffmpeg mpv python3-opencv pyt
   After=network-online.target
   
   [Service]
-  Environment=RTSP_URL=rtsp://joshglenen:joshglenen@192.168.2.247:554/stream2
+  Environment=RTSP_URL=rtsp://user:pass@IP:PORT/stream2
   Environment=MIN_AREA=0.001
   WorkingDirectory=/home/orangepi
-  ExecStart=/usr/bin/python3 /home/orangepi/motion_detect.py
+  ExecStart=/usr/bin/python3 /home/orangepi/motion_detector.py
   Restart=always
   RestartSec=2
   User=orangepi
