@@ -12,10 +12,10 @@ The Orange Pi runs Debian Xfce, displays the camera feed full-screen on an exter
 Power for both the SBC and monitor comes from a USB wall charger.
 
 ### Tested configuration:
-  Video latency: ~500 ms
-  Stream: 1080p @ 30 FPS (RTSP over TCP)
-  Stable Wi-Fi after disabling power save
-  Passive heatsink added to reduce CPU temperature
+  <cl>Video latency: ~500 ms </cl>
+  <cl>Stream: 1080p @ 30 FPS (RTSP over TCP) </cl>
+  <cl>Stable Wi-Fi after disabling power save </cl>
+ <cl> Passive heatsink added to reduce CPU temperature </cl>
 
 ### Install base os and packages
 [Debian XCFE](https://sd-card-images.johang.se/boards/orange_pi_zero3.html)
