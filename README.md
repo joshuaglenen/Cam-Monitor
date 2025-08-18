@@ -5,11 +5,10 @@ This project includes the design for a wireless camera with soc which connects t
 <li> The design of a 2 axis rotating hd camera paired to a portable tablet monitor </li>
 <li> Design documents illustrating the block diagram, circuit, pcb layout, and bill of materials </li>
 
-# Monitor prototype using commmercial rtsp camera
+# Monitor Prototype using Commmercial RTSP Camera
 This setup turns an Orange Pi Zero 3 into a dedicated baby monitor viewer with optional motion and audio detection, using a commercial RTSP-capable IP camera.
 
-The Orange Pi runs Debian Xfce, displays the camera feed full-screen on an external HDMI monitor, and can optionally run OpenCV-based detection in the background.
-Power for both the SBC and monitor comes from a USB wall charger.
+The Orange Pi runs Debian Xfce, displays the camera feed full-screen on an external HDMI monitor, and can optionally run OpenCV-based detection in the background (just sends a terminal message for now but can be altered to send a phone notification/text with an external app or paid service).
 
 ### Tested configuration:
   <li>Video latency: ~500 ms </li>
@@ -141,18 +140,60 @@ sudo apt install sudo curl wget git htop net-tools ffmpeg mpv python3-opencv pyt
 
 # Design Methods
 
-TODO
+This project was developed to create a compact embedded system capable of image capture, wireless communication, and real-time monitoring for the purpose of a baby/pet/security monitor. The process began with a requirement analysis, power budget, performance constraints, and component selection. A high-level block diagram (Figure 1) was used to outline the relationships between the chosen system-on-chip (SoC), memory, camera interface, power regulation, and communication subsystems.
+
+Next, a full schematic design (Figure 2) was completed. Critical modules included:
+
+    A BGA SoC with external DDR3 memory and eMMC storage.
+    
+    A camera sensor connected via MIPI CSI through an FFC connector.
+    
+    A Wi-Fi/Bluetooth module for connectivity.
+    
+    A power management stage using a USB-C input, fuse, and switching regulators.
+    
+    Supporting peripherals including an audio codec, microphone, infrared LED driver, and servo interfaces.
+
+Each functional block was designed with placement and routing considerations in mind. For high-speed components such as DDR3, eMMC, and MIPI CSI, trace length matching and impedance-controlled routing rules were implemented for signal integrity. The Wi-Fi module was positioned at the PCB edge to allow for an external antenna connection. JST connectors were chosen for plug in connections to motors/speaker/IR LEDs and placed on the exterior. Components were placed near their modules on a six layer pcb with separate ground/power planes and care was taken to separate the noisy systems from the sensitive data lines. Throughout development, iterative design checks and design rule verifications were carried out to conform to manufacturing standards and reliability.
 
 # Design Documents
 
-<img width="842" height="902" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/d269813a-696c-4c3f-b68d-40a24cbd9e87" />
+The system design is supported by the following:
+
+    Figure 1: High-level block diagram of the system architecture.
+
+    Figure 2: Circuit schematic of the camera board.
+
+    Figure 3: Camera module PCB layout.
+
+    Figure 4: Circuit schematic of the monitor board.
+
+    Figure 4: Main monitor PCB layout.
+
+    Table 1: Bill of Materials (BOM) listing all components, part numbers, and specifications.
+
+These figures and the accompanying table provide a clear overview of both the hardware structure and the detailed implementation.
+
+<img width="656" height="891" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/1ea75fdb-b6c4-4d59-96cb-ded9808747e3" />
 
 Fig 1: System Block Diagram
 
-Fig 2: Circuit Diagram
+TODO
+
+Fig 2: Circuit Diagram for the Camera
+
+<img width="1352" height="862" alt="Capture" src="https://github.com/user-attachments/assets/5823f549-319a-430c-b5e3-20b3b6bd74fe" />
 
 Fig 3: Camera PCB Diagram
 
-Fig 4: Monitor PCB Diagram
+TODO
 
-Table 2: BOM
+Fig 4: Circuit Diagram for the Monitor
+
+TODO
+
+Fig 5: Monitor PCB Diagram
+
+TODO
+
+Table 1: BOM
