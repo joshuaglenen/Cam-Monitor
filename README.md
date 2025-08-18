@@ -164,11 +164,7 @@ The system design is supported by the following:
 
     Figure 2: Circuit schematic of the camera board.
 
-    Figure 3: Camera module PCB layout.
-
-    Figure 4: Circuit schematic of the monitor board.
-
-    Figure 4: Main monitor PCB layout.
+    Figure 3: Camera board PCB layout.
 
     Table 1: Bill of Materials (BOM) listing all components, part numbers, and specifications.
 
@@ -185,14 +181,6 @@ Fig 2: Circuit Diagram for the Camera
 <img width="1352" height="862" alt="Capture" src="https://github.com/user-attachments/assets/5823f549-319a-430c-b5e3-20b3b6bd74fe" />
 
 Fig 3: Camera PCB Diagram
-
-TODO
-
-Fig 4: Circuit Diagram for the Monitor
-
-TODO
-
-Fig 5: Monitor PCB Diagram
 
 TODO
 
