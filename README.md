@@ -2,7 +2,7 @@
 
 This project includes the design for a wireless camera with soc which connects to a handheld mointor with an optional phone pairing. Below are three sections:
 <li> A tutorial to connect an existing rtsp enabled camera to a custom monitor with motion/sound detection </li>
-<li> The design of a 2 axis rotating hd camera paired to a portable tablet monitor </li>
+<li> The design of a 4 axis rotating hd camera paired to a portable tablet monitor </li>
 <li> Design documents illustrating the block diagram, circuit, pcb layout, and bill of materials </li>
 
 # Monitor Prototype using Commmercial RTSP Camera
