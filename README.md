@@ -174,7 +174,8 @@ These figures and the accompanying table provide a clear overview of both the ha
 
 Fig 1: System Block Diagram
 
-TODO
+<img width="4414" height="3118" alt="Untitled" src="https://github.com/user-attachments/assets/bf781b42-f123-4652-b1ce-7aaa05d2626a" />
+
 
 Fig 2: Circuit Diagram for the Camera
 
