@@ -154,7 +154,7 @@ Next, a full schematic design (Figure 2) was completed. Critical modules include
     
     Supporting peripherals including an audio codec, microphone, infrared LED driver, and servo interfaces.
 
-Each functional block was designed with placement and routing considerations in mind. For high-speed components such as DDR3, eMMC, and MIPI CSI, trace length matching and impedance-controlled routing rules were implemented for signal integrity. The Wi-Fi module was positioned at the PCB edge to allow for an external antenna connection. JST connectors were chosen for plug in connections to motors/speaker/IR LEDs and placed on the exterior. Components were placed near their modules on a six layer pcb with separate ground/power planes and care was taken to separate the noisy systems from the sensitive data lines. Throughout development, iterative design checks and design rule verifications were carried out to conform to manufacturing standards and reliability.
+Each functional block was designed with placement and routing considerations in mind. For high-speed components such as DDR3, eMMC, and MIPI CSI, trace length matching and impedance-controlled routing rules were implemented for signal integrity. The Wi-Fi module was positioned at the PCB edge to allow for an external antenna connection. JST connectors were chosen for plug in connections to motors/speaker/IR LEDs and placed on the board exterior. Components were placed in modules grouping on an eight layer pcb with separate ground and power planes. Care was taken to separate the noisy systems from the sensitive data lines. Throughout development, iterative design checks and design rule verifications were carried out to conform to manufacturing standards and reliability.
 
 # Design Documents
 
@@ -166,23 +166,19 @@ The system design is supported by the following:
 
     Figure 3: Camera board PCB layout.
 
-    Table 1: Bill of Materials (BOM) listing all components, part numbers, and specifications.
-
 These figures and the accompanying table provide a clear overview of both the hardware structure and the detailed implementation.
 
 <img width="656" height="891" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/1ea75fdb-b6c4-4d59-96cb-ded9808747e3" />
+
 
 Fig 1: System Block Diagram
 
 <img width="4414" height="3118" alt="Untitled" src="https://github.com/user-attachments/assets/bf781b42-f123-4652-b1ce-7aaa05d2626a" />
 
 
-Fig 2: Circuit Diagram for the Camera
+Fig 2: Circuit Diagram for the Camera Board
 
-<img width="1352" height="862" alt="Capture" src="https://github.com/user-attachments/assets/5823f549-319a-430c-b5e3-20b3b6bd74fe" />
+<img width="1309" height="843" alt="Capture" src="https://github.com/user-attachments/assets/5e74a335-2cde-4065-a710-395b9c99fbbc" />
 
-Fig 3: Camera PCB Diagram
 
-TODO
-
-Table 1: BOM
+Fig 3: PCB Diagram for the Camera Board
