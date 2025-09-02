@@ -67,10 +67,12 @@ Fig 4: Monitor Board System Block Diagram
 
 Fig 5: Monitor Board Circuit Diagram 
 
-<img width="1724" height="938" alt="Han<img width="1724" height="938" alt="Handheld Monitror22" src="https://github.com/user-attachments/assets/0b5ef84e-3184-484f-ad81-b817c4cba0ae" />
-
-<img width="1724" height="938" alt="Handheld Monitror22" src="https://github.com/user-attachments/assets/3a131a54-9314-48d7-8d4e-2c77840f79a7" />
+<img width="1037" height="689" alt="Handheld Monitor" src="https://github.com/user-attachments/assets/ec318a5d-bc78-452f-9d11-27cbb4f00aef" />
 
 
-Fig 6: Monitor Board PCB Diagram Top and Bottom View
+Fig 6: Monitor Board PCB Diagram Top View
 
+<img width="1047" height="688" alt="Handheld Monitror22" src="https://github.com/user-attachments/assets/312b87a5-1c06-4d0e-8aee-5e336693d86f" />
+
+
+Fig 7: Monitor Board PCB Diagram Bottom View
